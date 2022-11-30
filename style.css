@@ -1,0 +1,41 @@
+.navbar img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.input-group{
+    padding-left: 40px;
+}
+.carousel-item img{
+    min-height:300px;
+    object-fit: cover;
+    }
+.extspe img{
+    max-height: 200px;
+    max-width: 200px;
+    object-fit: cover;
+}
+.col{
+    text-align: center;
+}
+.nearext img{
+    max-height: 200px;
+    max-width: 200px;
+    object-fit: cover;
+}
+.endpart{
+    text-align: center;
+    background-color:#434242;
+}
+.fa-brands{
+    padding: 10px;
+}
+.fa-youtube{
+    color: #FF0000;
+}
+.fa-instagram{
+    color: #bc2a8d;
+}
+.fa-copyright{
+    color:  #FDF4EC;
+}
