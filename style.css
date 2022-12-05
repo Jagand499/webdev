@@ -3,6 +3,9 @@
     width: 40px;
     border-radius: 50%;
 }
+h3{
+    text-align: center;
+}
 .input-group{
     padding-left: 40px;
 }
@@ -15,6 +18,7 @@
     max-width: 200px;
     object-fit: cover;
 }
+
 .col{
     text-align: center;
 }
@@ -22,6 +26,16 @@
     max-height: 200px;
     max-width: 200px;
     object-fit: cover;
+}
+li
+{
+    list-style-type: none;
+}
+.bottomnav.navcont{
+    float: left;
+}
+.bottomnav.regform{
+    float: right;
 }
 .endpart{
     text-align: center;
