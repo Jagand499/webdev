@@ -31,12 +31,6 @@ li
 {
     list-style-type: none;
 }
-.bottomnav.navcont{
-    float: left;
-}
-.bottomnav.regform{
-    float: right;
-}
 .endpart{
     text-align: center;
     background-color:#434242;
