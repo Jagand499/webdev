@@ -31,6 +31,14 @@ li
 {
     list-style-type: none;
 }
+.bgimg{
+  background-image: url("https://wallpapercave.com/w/blHR95y");
+  min-height:340px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
 .endpart{
     text-align: center;
     background-color:#434242;
