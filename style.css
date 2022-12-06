@@ -17,27 +17,55 @@ h3{
     max-height: 200px;
     max-width: 200px;
     object-fit: cover;
+    transition: all .3s ease;
 }
-
+.extspe img:hover{
+    transform: scale(1.2);
+}
 .col{
     text-align: center;
+    max-height: 200px;
+    max-width: 200px;
+    overflow: hidden;
+    margin: 0 auto;
 }
 .nearext img{
     max-height: 200px;
     max-width: 200px;
     object-fit: cover;
+    transition: all .3s ease;
+}
+.nearext img:hover{
+    transform: scale(1.2);
 }
 li
 {
     list-style-type: none;
 }
 .bgimg{
-  background-image: url("https://wallpapercave.com/w/blHR95y");
-  min-height:340px;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/92/481/105/lion-lion-cub-family-cub-wallpaper-preview.jpg");
+  min-height: 500px;
+  min-width: auto;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+}
+.container{
+    position: absolute;
+    right: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+}
+.card{
+    margin: auto;
+}
+.btn:hover{
+    opacity: 0.5;
+}
+a:hover{
+    opacity: 0.5;
 }
 .endpart{
     text-align: center;
