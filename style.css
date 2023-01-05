@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+.nav-item{
+    padding:1px 1px;
+}
+.nav-item:hover{
+    background-color: #1c1c1c;
+    color:white;
+}
 .navbar img{
     height: 40px;
     width: 40px;
@@ -9,65 +17,576 @@ h3{
 .input-group{
     padding-left: 40px;
 }
+/**carousel**/
 .carousel-item img{
-    min-height:300px;
+    width:100%;
     object-fit: cover;
     }
-.extspe img{
-    max-height: 200px;
-    max-width: 200px;
-    object-fit: cover;
-    transition: all .3s ease;
+/**explore more**/
+ .explore{
+    margin-left: 85%;
+    position:relative;
+    box-sizing: border-box;
+    width: 130px;
+    height: 30px;
+    background-color:#333;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    letter-spacing: 0.2em;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    font-weight: 500;
 }
-.extspe img:hover{
-    transform: scale(1.2);
+.explore::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #358ad8;
+    transform: scaleX(0);
+    transition: 0.5s ease-in-out;
+    transform-origin: right;
+}
+.explore:hover::before{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.explore span{
+    display: inline-block;
+    z-index: 2;
+    transition: 0.5s ease-in-out;
+}
+.explore:hover span{
+    color: #333;
+}
+.explore i{
+    position: relative;
+    display: inline-block;
+    width: 2px;
+    height: 30px;
+    background: #d3d636;
+    transition: 0.5s,width 0.5s, height 0.5s;
+    transition-delay: 05s,0.5s,1s;
+}
+.explore:hover i{
+    width: 30px;
+    height:2px;
+    background: #333;
+    transition-delay: 0s,0.5s.1s;
+}
+.explore i::before{
+    content: '';
+    position: absolute;
+    top: 0.5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: transparent;
+    rotate: 0;
+    transform-origin: right;
+    transition: 1s;
+}
+.explore:hover i::before{
+    background: #333;
+    rotate: 45deg;
+    transition-delay: 1.5s;
+}
+.explore i::after{
+    content: '';
+    position: absolute;
+    top: -0.5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: transparent;
+    rotate: 0;
+    transform-origin: right;
+    transition: 1s;
+}
+.explore:hover i::after{
+    background: #333;
+    rotate: -45deg;
+    transition-delay: 1.5s;
+}
+/**main page images**/
+.extinctspe{
+    background:rgba(0, 0, 0, 0.7) url("https://c1.wallpaperflare.com/preview/33/103/673/dinosaur-tree-museum-dino.jpg");
+    background-blend-mode:darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    width: 100%;
+
+}
+.endangersp{
+    background:rgba(0, 0, 0, 0.7) url("https://www.wwf.org.uk/sites/default/files/styles/content_slide_image/public/2016-09/Large_WW11471.jpg?h=f20c371c&itok=8uS43wwn");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-blend-mode:darken;
+    min-height: 500px;
+    width: 100%;
+
+}
+.extspe{
+    position: relative;
+    padding-top: 15px;
+}
+.extspe .col{
+    position: relative;
+    width: 300px;
+    height: 275px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.extspe .col:hover{
+    z-index: 1;
+    transform: scale(1.25);
+    box-shadow: 0 25px 40px rgba(0, 0, 0, .5);
+}
+.extspe .col .eimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+ 
+}
+.extspe .col .eimg:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(138, 147, 147);
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+}
+.extspe .col:hover .eimg:before{
+    opacity: 1;
+}
+
+.extspe .col .eimg img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.extspe .col .etxt{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    padding: 30px;
+    align-items:flex-end;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    transform: translate(300px);
+    
+}
+.extspe .col:hover .etxt{
+    transform: translate(0);
+    transition-delay: 0.6s;
 }
 .col{
     text-align: center;
     max-height: 200px;
-    max-width: 200px;
+    max-width: 300px;
     overflow: hidden;
     margin: 0 auto;
 }
-.nearext img{
-    max-height: 200px;
-    max-width: 200px;
-    object-fit: cover;
-    transition: all .3s ease;
+/**extinct museums**/
+.santury{
+    justify-content: center;
+    display: flex;
+    align-items:center;
+    min-height: 100vh;
 }
-.nearext img:hover{
-    transform: scale(1.2);
+.contnr{
+    position: relative;
+    width: 600px;
+    height: 600px;
+    border:2px solid #fff;
+    border-radius: 50%;
+}
+.contnr .icon{
+    position: relative;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.contnr .icon .imgbx{
+    position: absolute;
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    transition:0.5s;
+    border: 1px solid #fff;
+    box-shadow: 0 0 0 4px #222,0 0 0 6px #fff;
+   transform: rotate(calc(360deg/8 * var(--i)));
+    transform-origin: 340px;
+    z-index: 100;
+    overflow: hidden;
+}
+.contnr .icon .imgbx.active{
+    box-shadow: 0 0 0 6px #222,0 0 0 12px #358ad8;
+}
+.contnr .icon .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transform: rotate(calc(-360deg/8 * var(--i)));
+    transition: 0.5s;
+    filter: grayscale(1);
+}
+.contnr .icon .imgbx.active img{
+    filter: grayscale(0);
+}
+.contnt{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contnt::before{
+    content: '';
+    position: absolute;
+    inset: 60px;
+    border: 4px solid transparent;
+    border-left: 4px solid #2196f3;
+    border-right: 4px solid #fff;
+    border-radius: 50%;
+    animation: animate_01 5s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+@keyframes animate_01 {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+.contnt::after{
+    content: '';
+    position: absolute;
+    inset: 120px;
+    border: 4px solid transparent;
+    border-left: 4px solid #d3d636;
+    border-right: 4px solid #fff;
+    border-radius: 50%;
+    animation: animate_02 2.5s linear infinite;
+    z-index: 1;
+    pointer-events: none;
+}
+@keyframes animate_02 {
+    0%{
+        rotate: 360deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
+ .contntbx{
+    position: absolute;
+    transform: scale(0);
+    transform: 0.5s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contntbx.active{
+    transform: scale(1);
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.contntbx .cardd{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.contntbx .cardd .imgbx{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.contntbx .cardd .imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contntbx .cardd .textbx{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contntbx .cardd .textbx h2{
+    position: relative;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.contntbx .cardd .textbx h2 span{
+    font-size: 0.65em;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+/**news and stories**/
+.news{
+    padding: 5px 5px;
+}
+.news .card::before, .card::after{
+    content: "";
+    height: 2px;
+    width: 0;
+    position:absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+}
+.news .card-body::before ,.card-body::after{
+    content: "";
+    width: 2px;
+    height: 0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: #fff;
+}
+.news .card:hover::before, .card:hover::after
+{
+    width: 100%;
+}
+.news .card:hover .card-body::before,.card:hover .card-body::after{
+    height: 100%;
+}
+.news .card{
+    margin: auto;
+}
+.news .card::after, .card::after{
+    transition-delay: 0.2s;
+}
+.news .card-body::before, .card-body::after{
+    transition-delay: 0s;
+}
+.news .card::before{
+    right: 0;
+    top: 0;
+}
+.news .card::after{
+    left: 0;
+    bottom: 0;
+}
+.news .card-body::before{
+    left: 0;
+    top: 0;
+}
+.news .card-body::after{
+    right: 0;
+    bottom: 0;
+}
+.news .card:hover::before, .card:hover::after{
+    transition-delay: 0s;
+}
+.news .card:hover .card-body::before, .card:hover .card-body::after{
+    transition-delay: 0.2s;
+}
+/**others**/
+p{
+    font-family: 'Poppins',sans-serif;
+}
+.btn:hover{
+    opacity: 0.5;
+}
+a{
+    text-decoration: none;
 }
 li
 {
     list-style-type: none;
 }
-.bgimg{
-  background-image: url("https://c4.wallpaperflare.com/wallpaper/92/481/105/lion-lion-cub-family-cub-wallpaper-preview.jpg");
-  min-height: 500px;
-  min-width: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+/**contact us**/
+section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
 }
-.container{
+.ccontact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:rgba(0, 0, 0, 0.7) url("https://c4.wallpaperflare.com/wallpaper/367/252/59/5bd3350aedb54-wallpaper-preview.jpg");
+    background-blend-mode:darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.ccontact .ccontent{
+    max-width: 800px;
+    text-align: center;
+}
+.ccontact .ccontent h3{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.ccontact .ccontent p{
+    font-weight: 300;
+    color: #fff;
+}
+.ccontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.ccontainer .contactinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.ccontainer .contactinfo .cbox{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.ccontainer .contactinfo .cbox .cicon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.ccontainer .contactinfo .cbox .ctext{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.ccontainer .contactinfo .cbox .ctext h5{
+    font-weight: 500;
+    color: #00bcd4;
+}
+.contactform{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactform h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactform .inputbox input,
+    .contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize:none;
+}
+.contactform .inputbox span{
     position: absolute;
-    right: 0;
-    margin: 20px;
-    max-width: 300px;
-    padding: 16px;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
 }
-.card{
-    margin: auto;
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+    color:#e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
 }
-.btn:hover{
-    opacity: 0.5;
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
 }
-a:hover{
-    opacity: 0.5;
+@media(max-width:991px)
+{
+    .ccontact{
+        padding: 50px;
+    }
+    .ccontainer{
+        flex-direction: column;
+    }
+    .ccontainer .contactinfo{
+        margin-bottom: 40px;
+    }
+    .ccontainer  .contactinfo,
+    .contactform{
+        width: 100%;
+    }
 }
-.endpart{
+/**bottom part**/
+.sociallinks{
     text-align: center;
     background-color:#434242;
 }
@@ -82,4 +601,7 @@ a:hover{
 }
 .fa-copyright{
     color:  #FDF4EC;
-}
+ }
+ i:hover{
+    opacity: 0.5;
+ }

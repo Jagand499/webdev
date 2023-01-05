@@ -9,6 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
 </head>
 <body class="bg-dark text-light">
   <!--nav bar-->
@@ -42,11 +43,14 @@
       </div>
     </nav>
 <!--image slide-->
-<div id="carouselslide" class="carousel slide carousel-fade" data-bs-ride="true">
+<div id="carouselslide" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <span></span>
     <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <span></span>
     <button type="button" data-bs-target="#carouselslide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <span></span>
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -78,55 +82,208 @@
   </button>
 </div>
 <!--Species completely extinct-->
+<div class="extinctspe">
 <h3>EXTINCT SPECIES</h3>
-<div class="extspe bg-dark text-light">
+<center><p>This section features lists of extinct species, organisms that have become extinct, either in the wild or completely disappeared from Earth.</p></center>
+<a class="explore" href=""><i></i><span>explore</span></a>
+<div class="extspe text-light">
 <div class="row">
-  <div class="col col-lg-3 col-md-4 col-sm-6">
+  <div class="col  col-lg-3 col-md-4 col-sm-6 col-12 ">
+    <div class="eimg">
     <img src="https://wallpapercave.com/dwp1x/wp10106626.jpg" alt="loading...">
+  </div>
+  <div class="etxt">
     <h5>Dodo</h5>
   </div>
-  <div class="col col-lg-3 col-md-4 col-sm-6">
+  </div>
+  <div class="col  col-lg-3 col-md-4 col-sm-6 col-12">
+    <div class="eimg">
     <img src="https://e1.pxfuel.com/desktop-wallpaper/727/854/desktop-wallpaper-2-tasmanian-tiger-tazmanian-tiger-thumbnail.jpg" alt="loading...">
+  </div>
+  <div class="etxt">
     <h5>Tasmanian Tiger</h5>
   </div>
-  <div class="col col-lg-3 col-md-4 col-sm-6">
+  </div>
+  <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+    <div class="eimg">
     <img src="https://wallpapercave.com/dwp1x/wp10499059.jpg" alt="loading...">
+  </div>
+  <div class="etxt">
     <h5>Woolly Mammoth</h5>
   </div>
-  <div class="col col-lg-3 col-md-4 col-sm-6">
+  </div>
+  <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+  <div class="eimg">
     <img src="https://c1.wallpaperflare.com/preview/873/730/444/elk-wax-great-irish-elk-museum.jpg" alt="loading...">
+  </div>
+  <div class="etxt">
     <h5>Irish Elk</h5>
+  </div>
   </div>
 </div>
 </div>
-<hr>
+</div>
+<!--sanctuaries-->
+<div class="santury">
+<div class="contnr">
+  <div class="icon">
+    <div class="imgbx active" style="--i:1;" data-id="contnt1"><!--nmonaturalhisstorydc-->
+      <img src="https://naturalhistory.si.edu/sites/default/files/styles/hero/public/media/image/nmnh1807141026resizedcrop.jpg.webp?itok=cih_ep7S" alt="loading....">
+    </div>
+    <div class="imgbx" style="--i:2;"  data-id="contnt2"><!--naturalhisstoryuk-->
+      <img src="https://www.nhm.ac.uk/content/dam/nhmwww/press-office/press-image-archive/2018/Hintze%20Halll%2031%20May%202018-08_FINAL.jpg.thumb.1160.1160.jpg" alt="loading....">
+    </div>
+    <div class="imgbx" style="--i:3;"  data-id="contnt3"><!--fieldchicago-->
+      <img src="https://www.fieldmuseum.org/sites/default/files/styles/3x2_1400w/public/lucy-hewett-fieldmuseum_maximo-401.jpg?itok=wWZNKIH8" alt="loading....">
+    </div>
+    <div class="imgbx" style="--i:4;"  data-id="contnt4"><!--mofnztepapa-->
+      <img src="https://www.tepapa.govt.nz/sites/default/files/mountains-to-sea-exhibition-view-2018-photograph-by-maarten-holl-te-.jpg" alt="loading....">
+    </div>
+    <div class="imgbx" style="--i:5;"  data-id="contnt5"><!--beijingmofnh-->
+      <img src="https://www.topchinatravel.com/pic/city/beijing/attractions/Beijing-Museum-of-Natural-History-4.jpg" alt="loading....">
+    </div>
+    <div class="imgbx" style="--i:6;"  data-id="contnt6"><!--laplataargentina-->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Compared_Osteology_Room_La_Plata_Museum.JPG/800px-Compared_Osteology_Room_La_Plata_Museum.JPG?20090510172242" alt="loading....">
+    </div>
+    <div class="imgbx" style="--i:7;"  data-id="contnt7"><!--melbournemuseum-->
+      <img src="https://museumspaces.com.au/media/10063/science__life_-1.jpg" alt="loading....">
+    </div>
+    <div class="imgbx" style="--i:8;"  data-id="contnt8"><!--leekongsingapore-->
+      <img src="https://www.sna.org.sg/wp-content/uploads/2016/07/LKCNHM-feature.jpg" alt="loading....">
+    </div>
+  </div>
+  <div class="contnt">
+    <div class="contntbx active" id="contnt1">
+      <div class="cardd">
+        <div class="imgbx">
+          <img src="https://naturalhistory.si.edu/sites/default/files/styles/hero/public/media/image/nmnh1807141026resizedcrop.jpg.webp?itok=cih_ep7S" alt="loading...">
+        </div>
+        <div class="textbx">
+          <h2>National Museum of Natural History<br>Washington,DC</h2>
+        </div>
+      </div>
+    </div>
+    <div class="contntbx" id="contnt2">
+      <div class="cardd">
+        <div class="imgbx">
+          <img src="https://www.nhm.ac.uk/content/dam/nhmwww/press-office/press-image-archive/2018/Hintze%20Halll%2031%20May%202018-08_FINAL.jpg.thumb.1160.1160.jpg" alt="loading...">
+        </div>
+        <div class="textbx">
+          <h2>Natural History Museum<br>London</h2>
+        </div>
+      </div>
+    </div>
+    <div class="contntbx" id="contnt3">
+      <div class="cardd">
+        <div class="imgbx">
+          <img src="https://www.fieldmuseum.org/sites/default/files/styles/3x2_1400w/public/lucy-hewett-fieldmuseum_maximo-401.jpg?itok=wWZNKIH8" alt="loading...">
+        </div>
+        <div class="textbx">
+          <h2>Field Museum<br>Chicago</h2>
+        </div>
+      </div>
+    </div>
+    <div class="contntbx" id="contnt4">
+      <div class="cardd">
+        <div class="imgbx">
+          <img src="https://www.tepapa.govt.nz/sites/default/files/mountains-to-sea-exhibition-view-2018-photograph-by-maarten-holl-te-.jpg" alt="loading...">
+        </div>
+        <div class="textbx">
+          <h2>Museum of New Zealand<br>Wellington</h2>
+        </div>
+      </div>
+    </div>
+    <div class="contntbx" id="contnt5">
+      <div class="cardd">
+        <div class="imgbx">
+          <img src="https://www.topchinatravel.com/pic/city/beijing/attractions/Beijing-Museum-of-Natural-History-4.jpg" alt="loading...">
+        </div>
+        <div class="textbx">
+          <h2>Beijing Museum of Natural History<br>Beijing</h2>
+        </div>
+      </div>
+    </div>
+    <div class="contntbx" id="contnt6">
+      <div class="cardd">
+        <div class="imgbx">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Compared_Osteology_Room_La_Plata_Museum.JPG/800px-Compared_Osteology_Room_La_Plata_Museum.JPG?20090510172242" alt="loading...">
+        </div>
+        <div class="textbx">
+          <h2>La plata Museum<br>Argentina</h2>
+        </div>
+      </div>
+    </div>
+    <div class="contntbx" id="contnt7">
+      <div class="cardd">
+        <div class="imgbx">
+          <img src="https://museumspaces.com.au/media/10063/science__life_-1.jpg" alt="loading...">
+        </div>
+        <div class="textbx">
+          <h2>Melbourne Museum<br>Australia</h2>
+        </div>
+      </div>
+    </div>
+    <div class="contntbx" id="contnt8">
+      <div class="cardd">
+        <div class="imgbx">
+          <img src="https://www.sna.org.sg/wp-content/uploads/2016/07/LKCNHM-feature.jpg" alt="loading...">
+        </div>
+        <div class="textbx">
+          <h2>Lee Kong Chian Natural History MUseum<br>Singapore</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 <!--species nearing endangerd-->
+<div class="endangersp">
 <h3>ENDANGERED SPECIES</h3>
-<div class="nearext bg-dark text-light">
+<center><p>A type of organism that is threatened by extinction</p></center>
+<a class="explore" href=""><i></i><span>explore</span></a>
+<div class="extspe text-light">
   <div class="row">
-    <div class="col col-lg-3 col-md-4 col-sm-6">
+    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+      <div class="eimg">
       <img class="hoveff" src="https://c4.wallpaperflare.com/wallpaper/312/820/27/brown-rat-eastern-chipmunk-eastern-chipmunk-wallpaper-preview.jpg" alt="loading...">
+      </div>
+      <div class="etxt">
       <h5>Sunda Tiger</h5>
     </div>
-    <div class="col col-lg-3 col-md-4 col-sm-6">
-      <img src="https://files.worldwildlife.org/wwfcmsprod/images/Javan_rhino_071515/story_full_width/3ngwxzjuh3__AMG_0706.jpg" alt="loading...">
-      <h5>Javan Rhinos</h5>
+  </div>
+    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+      <div class="eimg">
+        <img src="https://files.worldwildlife.org/wwfcmsprod/images/Javan_rhino_071515/story_full_width/3ngwxzjuh3__AMG_0706.jpg" alt="loading...">
+      </div>
+      <div class="etxt">
+        <h5>Javan Rhinos</h5>
     </div>
-    <div class="col col-lg-3 col-md-4 col-sm-6">
-      <img src="https://wallpaperaccess.com/full/1149256.jpg" alt="loading...">
+</div>
+    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+      <div class="eimg">
+        <img src="https://wallpaperaccess.com/full/1149256.jpg" alt="loading...">
+      </div>
+      <div class="etxt">
       <h5>Cheetah</h5>
     </div>
-    <div class="col col-lg-3 col-md-4 col-sm-6">
-      <img src="https://wallpapercave.com/wp/wp9498238.jpg" alt="loading...">
+  </div>
+    <div class="col col-lg-3 col-md-4 col-sm-6 col-12">
+      <div class="eimg">
+        <img src="https://wallpapercave.com/wp/wp9498238.jpg" alt="loading...">
+      </div>
+      <div class="etxt">
       <h5>Asian elephant</h5>
     </div>
   </div>
   </div>
+  </div>
+</div>
   <hr>
   <!--NEWS AND STORIES-->
   <h3>NEWS & STORIES</h3>
-  <div class="news row">
-    <div class="card bg-dark col-lg-4 col-md-4 col-sm-6" style="width: 18rem;">
+  <a class="explore" href=""><i></i><span>explore</span></a>
+  <div id="news" class="news row">
+    <div class="card bg-dark col-lg-4 col-md-4 col-sm-6 col-12" style="width: 18rem;">
         <img class="card-img-top" src="https://c4.wallpaperflare.com/wallpaper/838/665/301/look-snow-the-amur-tiger-moscow-zoo-wallpaper-preview.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Predators of predators</h5>
@@ -134,7 +291,7 @@
           <a href="#" class="btn btn-primary">see more</a>
         </div>
       </div>
-      <div class="card bg-dark col-lg-4 col-md-4 col-sm-6" style="width: 18rem;">
+      <div class="card bg-dark col-lg-4 col-md-4 col-sm-6 col-12" style="width: 18rem;">
         <img class="card-img-top" src="https://c4.wallpaperflare.com/wallpaper/791/481/308/sea-turtle-marine-biology-ecosystem-turtle-wallpaper-preview.jpg" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">International wildlife trade talks lead to more protection of animals</h5>
@@ -142,7 +299,7 @@
           <a href="#" class="btn btn-primary">see more</a>
         </div>
       </div>
-      <div class="card bg-dark col-lg-4 col-md-4 col-sm-6" style="width: 18rem;">
+      <div class="card bg-dark col-lg-4 col-md-4 col-sm-6 col-12" style="width: 18rem;">
         <img class="card-img-top" src="https://fastcdn.impakter.com/wp-content/uploads/2022/07/June-30-2022-UN-Ocean-Conference-UN-Under-sec-general-talk.jpg?strip=all&lossy=0&quality=92&sharp=1&resize=750%2C375&ssl=1" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">WWF's Marcene Mitchell on COP27 takeaways</h5>
@@ -152,46 +309,86 @@
       </div>
   </div>
   <hr>
+  <!--merchandise-->
+
   <!--bootom navigate-->
   <div class="row">
     <div class="col-lg-4 col-md-4 col-sm-4"><ul>
       <h5>Discover</h5>
-      <li>who we are</li>
-      <li>how we work</li>
-      <li>latest stories</li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><a href="#news">News & Stories</a></li>
     </ul></div>
     <div class="col-lg-4 col-md-4 col-sm-4"><ul>
       <h5>Connect</h5>
-      <li>contacts</li>
-      <li>help center</li>
+      <li><a href="#sociallinks">social media</a></li>
+      <li><a  href="#contact">contact us</a></li>
     </ul></div>
-  <div class="bgimg col-lg-4 col-md-4 col-sm-4">
-  <form action="" method="get" class="container">
-    <ul><h4 style="color:#4169e1;">REGISTRATION FORM</h4>
-    <label>FIRST NAME
-      <input type="text">
-    </label><br>
-    <label>LAST NAME
-      <input type="text">
-    </label><br>
-    <label>MOBILE NUMBER
-      <input type="text">
-    </label><br>
-    <label>E-MAIL<br>
-      <input type="text">
-    </label><br>
-    <input class="btn btn-primary" type="submit" name="sign up" id="">
-  </form></div>
 </div>
-  <hr>
+<!--contact us -->
+<section id="contact" class="ccontact">
+  <div class="ccontent">
+    <center><h3>Contact Us</h3>
+   <p>If you have any queries feel free to contact us through following ways</p></center> 
+  </div>
+  <div class="ccontainer">
+    <div class="contactinfo">
+      <div class="cbox">
+        <div class="cicon"><i class="fa-solid fa-phone"></i></div>
+          <div class="ctext">
+          <h5>phone</h5>
+          <p>093-382-2672</p>
+          </div>
+      </div>
+      <div class="cbox">
+        <div class="cicon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="ctext">
+          <h5>Email</h5>
+          <p>jaguar@gmail.com</p>
+        </div>
+      </div>
+    </div>
+  <div class="contactform">
+    <form action="">
+      <h2>Send Message</h2>
+      <div class="inputbox">
+        <input type="text" name="" required="required">
+        <span>Full Name</span>
+      </div>
+      <div class="inputbox">
+        <input type="text" name="" required="required">
+        <span>Email</span>
+      </div>
+      <div class="inputbox">
+        <textarea required="required"></textarea>
+        <span>Type Your Message...</span>
+      </div>
+      <div class="inputbox" onmouseover="this.style.opacity=0.5" onmouseout="this.style.opacity=1">
+        <input type="submit" name="" value="send">
+      </div>
+    </form>
+  </div>
+  </div>
+</section>
   <!--end part-->
-  <div class="endpart text-light">
+  <div id="sociallinks" class="sociallinks text-light">
     <h3>Connect with us</h3><br>
     <a href=""><i class="fa-brands fa-facebook-f fa-2xl"></i></a>
     <a href=""><i class="fa-brands fa-twitter fa-2xl"></i></a>
     <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
     <a href=""><i class="fa-brands fa-youtube fa-2xl"></i></a><br><br>
-    <a href=""><i class="fa-regular fa-copyright fa-xl"></i></a>
+    <p><a href=""><i class="fa-regular fa-copyright fa-xl"></i>&nbsp;all rights reserved</p>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"> </script> 
+  <script type="text/javascript">
+ $(document).on('mouseover','.santury .contnr .icon .imgbx',function(){
+  $(this).addClass('active').siblings().removeClass('active')
+  var bx=$(this).data("id");
+  $(document).when('.santury .contnr .icon .imgbx').done.on('mouseover','.santury .contnr .contnt .contntbx',function(bx){
+    if($(id).value()==bx){
+    $(this).addClass('active').siblings().removeClass('active')}
+})
+})
+  </script>
 </body>
 </html>
